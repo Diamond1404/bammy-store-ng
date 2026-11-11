@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Payment status | BAMMY STORE NG</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="section" style="max-width:720px;margin:auto"><p class="eyebrow">BAMMY STORE NG</p><h1 style="font-family:'Playfair Display',serif">Checking your payment</h1><p id="status">Please wait while we verify your transaction securely.</p><a class="btn btn-green" href="index.html">Return to store</a></main>
+<script>
+(async()=>{
+ const reference=new URLSearchParams(location.search).get("reference");
+ const el=document.getElementById("status");
+ if(!reference){el.textContent="No payment reference was provided. If you completed payment, please contact the store with your receipt.";return;}
+ try{
+  const r=await fetch(`http://localhost:4242/api/payments/verify/${encodeURIComponent(reference)}`);
+  const data=await r.json();
+  el.textContent=data.paid?`Payment confirmed for order ${data.orderReference}. Thank you for shopping with BAMMY STORE NG!`:`Payment is not yet confirmed for ${data.orderReference}. Please contact the store if you have been debited.`;
+ }catch(e){el.textContent="We could not verify the payment right now. Please contact the store with your payment reference.";}
+})();
+</script></body></html>
