@@ -18,7 +18,6 @@ The website uses a modern combination of **Emerald Green, Grey and Orange** to c
 Our online store is organized into six major shopping categories:
 
 | Category | Description |
-|---|---|
 | 🍳 Kitchen & Home | Kitchen utensils and household essentials. |
 | 👡 Women's Footwear | Female flops, slippers and casual footwear. |
 | 👜 Women's Bags | Affordable casual and corporate bags for women. |
@@ -27,7 +26,6 @@ Our online store is organized into six major shopping categories:
 | ⌚ Wristwatches | Stylish wristwatches for different occasions. |
 
 ## ✨ Website Features
-
 - Responsive design for mobile phones, tablets and desktop computers.
 - Professionally organized shopping categories.
 - Product catalogue and product filtering.
@@ -41,16 +39,13 @@ Our online store is organized into six major shopping categories:
 - Backend architecture using Node.js and Express.js.
 
 ## 🎨 Brand Identity
-
 **Primary Colours:**
 - Emerald Green – Represents elegance, freshness and trust.
 - Grey – Creates a clean, modern and professional appearance.
 - Orange – Adds energy and highlights important shopping actions.
 
 ## 🛠️ Technologies Used
-
 | Technology | Purpose |
-|---|---|
 | HTML5 | Website structure |
 | CSS3 | Website styling and responsive layouts |
 | JavaScript | Interactive website functionality |
@@ -59,8 +54,6 @@ Our online store is organized into six major shopping categories:
 | Paystack | Payment integration architecture |
 
 ## 📁 Project Structure
-
-```text
 bammy-store-ng/
 │
 ├── public/
@@ -155,7 +148,7 @@ BAMMY STORE NG is an ongoing e-commerce development project. Additional improvem
 
 ## 👨‍💻 Developer
 
-**Diamond1404**
+**Dayo Daramola**
 
 GitHub Profile:  
 https://github.com/Diamond1404
